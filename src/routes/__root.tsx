@@ -77,14 +77,18 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
+      { title: "Mustafa|Tech.MM" },
+      { name: "description", content: "A personal portfolio website showcasing \"Muhammad Mustafa\" with a clean, modern design." },
       { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { property: "og:title", content: "Mustafa|Tech.MM" },
+      { property: "og:description", content: "A personal portfolio website showcasing \"Muhammad Mustafa\" with a clean, modern design." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "Mustafa|Tech.MM" },
+      { name: "twitter:description", content: "A personal portfolio website showcasing \"Muhammad Mustafa\" with a clean, modern design." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/b5b49184-626a-4424-a240-6a7780c06c04/id-preview-bfb98e7b--f1362c95-bdf6-4ff9-ac21-26c5e1898635.lovable.app-1781609842919.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/b5b49184-626a-4424-a240-6a7780c06c04/id-preview-bfb98e7b--f1362c95-bdf6-4ff9-ac21-26c5e1898635.lovable.app-1781609842919.png" },
     ],
     links: [
       {
