@@ -193,26 +193,24 @@ function Work() {
       </div>
 
       <div className="relative mx-auto mt-20 max-w-4xl">
-        <div className="absolute left-1/2 top-0 bottom-0 w-px -translate-x-1/2 bg-gradient-to-b from-primary/0 via-primary/50 to-primary/0" />
-        <ul className="space-y-16">
+        <div className="absolute left-6 md:left-1/2 top-0 bottom-0 w-px md:-translate-x-1/2 bg-gradient-to-b from-primary/0 via-primary/50 to-primary/0" />
+        <ul className="space-y-12">
           {experiences.map((e, i) => {
             const left = i % 2 === 0;
             return (
-              <li key={e.role + i} className="grid grid-cols-1 items-start gap-6 md:grid-cols-[1fr_auto_1fr]">
-                <div className={`md:${left ? "block" : "hidden"} ${left ? "md:text-right" : ""}`}>
-                  {left && <ExperienceCard exp={e} />}
-                </div>
-                <div className="relative flex justify-center md:col-start-2">
-                  <div className="flex h-14 w-14 items-center justify-center rounded-full bg-card border border-primary/40 glow-ring">
+              <li key={e.role + i} className="relative grid grid-cols-[3rem_1fr] items-start gap-4 md:grid-cols-2 md:gap-12">
+                <div className="md:hidden">
+                  <div className="flex h-12 w-12 items-center justify-center rounded-full bg-card border border-primary/40 glow-ring">
                     <span className="text-primary">●</span>
                   </div>
                 </div>
-                <div className={`md:${!left ? "block" : "hidden"}`}>
-                  {!left && <ExperienceCard exp={e} />}
+                <div className="hidden md:block absolute left-1/2 top-2 -translate-x-1/2">
+                  <div className="flex h-12 w-12 items-center justify-center rounded-full bg-card border border-primary/40 glow-ring">
+                    <span className="text-primary">●</span>
+                  </div>
                 </div>
-                <div className="md:hidden">
-                  {/* mobile fallback shows card under marker */}
-                  {!left && <ExperienceCard exp={e} />}
+                <div className={`${left ? "md:col-start-1 md:pr-12 md:text-right" : "md:col-start-2 md:pl-12"}`}>
+                  <ExperienceCard exp={e} />
                 </div>
               </li>
             );
