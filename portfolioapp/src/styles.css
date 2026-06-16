@@ -66,7 +66,6 @@
     font-family: var(--font-display);
     -webkit-font-smoothing: antialiased;
   }
-  }
 }
 
 @layer utilities {
