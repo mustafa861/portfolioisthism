@@ -384,19 +384,13 @@ const hackathons = [
     url: "https://github.com/mustafa861/hackathon4",
     tech: "Python / TypeScript / Next.js",
   },
-  {
-    title: "Hackathon 5 — CRM Digital FTE Factory",
-    desc: "CRM Digital FTE Factory with Python backend and database-driven architecture.",
-    url: "https://github.com/mustafa861/hackathon5",
-    tech: "Python / JavaScript / PostgreSQL",
-  },
 ];
 
 function Hackathons() {
   return (
     <section id="hackathons" className="relative mx-auto max-w-7xl px-6 py-32 scroll-mt-20">
       <p className="text-sm font-semibold tracking-[0.3em] text-muted-foreground section-animate">HACKATHONS</p>
-      <h2 className="mt-3 text-5xl font-extrabold tracking-tight sm:text-6xl section-animate">All 6 Hackathons</h2>
+      <h2 className="mt-3 text-5xl font-extrabold tracking-tight sm:text-6xl section-animate">Hackathons</h2>
       <div className="mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {hackathons.map((h, i) => (
           <a
