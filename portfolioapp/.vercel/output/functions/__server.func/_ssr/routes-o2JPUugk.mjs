@@ -1,7 +1,7 @@
 import { r as __toESM } from "../_runtime.mjs";
 import { n as require_jsx_runtime, r as require_react } from "../_libs/react+tanstack__react-query.mjs";
 import { t as es_default } from "../_libs/emailjs__browser.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/routes-B3zW5Qh0.js
+//#region node_modules/.nitro/vite/services/ssr/assets/routes-o2JPUugk.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
 var hero_bg_default = "/assets/hero-bg-Bdt_VgnL.jpg";
@@ -463,17 +463,26 @@ var socialLinks = [
 		icon: "IG"
 	}
 ];
-var projects = [{
-	title: "BizzFlow AI",
-	desc: "A full-stack AI-powered business automation platform. Built with TypeScript frontend and Python backend.",
-	url: "https://github.com/mustafa861/bizzflow-ai",
-	tech: "TypeScript / Python"
-}, {
-	title: "Restaurant Management System",
-	desc: "A full-stack restaurant management system with Python backend and TypeScript frontend.",
-	url: "https://github.com/mustafa861/resturantclient",
-	tech: "TypeScript / Python"
-}];
+var projects = [
+	{
+		title: "DebateME",
+		desc: "AI-powered debate platform for practicing argumentation skills against an intelligent opponent with real-time fallacy detection and scoring.",
+		url: "https://github.com/mustafa861/DebateME",
+		tech: "Next.js / Python / FastAPI"
+	},
+	{
+		title: "BizzFlow AI",
+		desc: "A full-stack AI-powered business automation platform. Built with TypeScript frontend and Python backend.",
+		url: "https://github.com/mustafa861/bizzflow-ai",
+		tech: "TypeScript / Python"
+	},
+	{
+		title: "Restaurant Management System",
+		desc: "A full-stack restaurant management system with Python backend and TypeScript frontend.",
+		url: "https://github.com/mustafa861/resturantclient",
+		tech: "TypeScript / Python"
+	}
+];
 function Projects() {
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("section", {
 		id: "projects",
@@ -543,12 +552,6 @@ var hackathons = [
 		desc: "AI-powered educational tutor with Zero-Backend-LLM architecture. Content delivery, quizzes, progress tracking, and hybrid intelligence.",
 		url: "https://github.com/mustafa861/hackathon4",
 		tech: "Python / TypeScript / Next.js"
-	},
-	{
-		title: "Hackathon 5 — CRM Digital FTE Factory",
-		desc: "CRM Digital FTE Factory with Python backend and database-driven architecture.",
-		url: "https://github.com/mustafa861/hackathon5",
-		tech: "Python / JavaScript / PostgreSQL"
 	}
 ];
 function Hackathons() {
@@ -562,7 +565,7 @@ function Hackathons() {
 			}),
 			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", {
 				className: "mt-3 text-5xl font-extrabold tracking-tight sm:text-6xl section-animate",
-				children: "All 6 Hackathons"
+				children: "Hackathons"
 			}),
 			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
 				className: "mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-3",
