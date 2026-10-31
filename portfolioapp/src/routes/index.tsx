@@ -316,6 +316,12 @@ const socialLinks = [
 
 const projects = [
   {
+    title: "DebateME",
+    desc: "AI-powered debate platform for practicing argumentation skills against an intelligent opponent with real-time fallacy detection and scoring.",
+    url: "https://github.com/mustafa861/DebateME",
+    tech: "Next.js / Python / FastAPI",
+  },
+  {
     title: "BizzFlow AI",
     desc: "A full-stack AI-powered business automation platform. Built with TypeScript frontend and Python backend.",
     url: "https://github.com/mustafa861/bizzflow-ai",
