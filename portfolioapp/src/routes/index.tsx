@@ -216,6 +216,7 @@ const certificates = [
     title: "Professional Certificate",
     issuer: "Muhammad Mustafa",
     description: "Official certification documenting achievements and skills in technology and development.",
+    image: "/Muhammad_Mustafa_Certificate.png",
     file: "/Muhammad_Mustafa_Certificate.pdf",
   },
 ];
@@ -303,7 +304,7 @@ function Certificates() {
     <section id="certificates" className="relative mx-auto max-w-7xl px-6 py-32 scroll-mt-20">
       <p className="text-sm font-semibold tracking-[0.3em] text-muted-foreground section-animate">CERTIFICATES</p>
       <h2 className="mt-3 text-5xl font-extrabold tracking-tight sm:text-6xl section-animate">Certifications</h2>
-      <div className="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-2">
+      <div className="mt-16 grid gap-8 sm:grid-cols-1 lg:grid-cols-2">
         {certificates.map((cert) => (
           <div
             key={cert.title}
@@ -311,10 +312,10 @@ function Certificates() {
           >
             <h3 className="text-lg font-semibold mb-4">{cert.title}</h3>
             <div className="relative w-full bg-background/50 rounded-lg overflow-hidden border border-border/60">
-              <embed
-                src={cert.file}
-                type="application/pdf"
-                className="w-full h-[500px]"
+              <img
+                src={cert.image}
+                alt={cert.title}
+                className="w-full h-auto object-contain"
               />
             </div>
             <div className="mt-6 flex justify-center">
