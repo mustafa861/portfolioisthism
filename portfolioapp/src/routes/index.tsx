@@ -18,6 +18,7 @@ export const Route = createFileRoute("/")({
 const navLinks = [
   { href: "#about", label: "About" },
   { href: "#education", label: "Education" },
+  { href: "#certificates", label: "Certificates" },
   { href: "#projects", label: "Projects" },
   { href: "#hackathons", label: "Hackathons" },
   { href: "#blog", label: "Blog" },
@@ -93,6 +94,7 @@ function Index() {
         <About />
         <Expertise />
         <Education />
+        <Certificates />
         <Tech />
         <Projects />
         <Hackathons />
@@ -209,6 +211,15 @@ const education = [
   },
 ];
 
+const certificates = [
+  {
+    title: "Professional Certificate",
+    issuer: "Muhammad Mustafa",
+    description: "Official certification documenting achievements and skills in technology and development.",
+    file: "/Muhammad_Mustafa_Certificate.pdf",
+  },
+];
+
 function About() {
   return (
     <section id="about" className="relative mx-auto max-w-7xl px-6 py-32 scroll-mt-20">
@@ -280,6 +291,47 @@ function Education() {
           <div key={e.school} className="card-violet group relative p-7 transition hover:-translate-y-1 hover:shadow-[0_30px_60px_-20px_oklch(0.72_0.2_135/0.6)] section-animate">
             <h3 className="text-lg font-semibold">{e.school}</h3>
             <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{e.description}</p>
+          </div>
+        ))}
+      </div>
+    </section>
+  );
+}
+
+function Certificates() {
+  return (
+    <section id="certificates" className="relative mx-auto max-w-7xl px-6 py-32 scroll-mt-20">
+      <p className="text-sm font-semibold tracking-[0.3em] text-muted-foreground section-animate">CERTIFICATES</p>
+      <h2 className="mt-3 text-5xl font-extrabold tracking-tight sm:text-6xl section-animate">Certifications</h2>
+      <div className="mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        {certificates.map((cert) => (
+          <div
+            key={cert.title}
+            className="card-violet group relative p-7 transition hover:-translate-y-1 hover:shadow-[0_30px_60px_-20px_oklch(0.72_0.2_135/0.6)] section-animate"
+          >
+            <div className="mb-6 inline-flex h-14 w-14 items-center justify-center rounded-xl bg-primary/15 text-2xl text-primary">
+              📜
+            </div>
+            <h3 className="text-lg font-semibold">{cert.title}</h3>
+            <p className="mt-2 text-xs uppercase tracking-widest text-primary/80">{cert.issuer}</p>
+            <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{cert.description}</p>
+            <div className="mt-6 flex gap-3">
+              <a
+                href={cert.file}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="rounded-full bg-primary/10 border border-primary/30 px-4 py-2 text-xs font-semibold text-primary transition hover:bg-primary/20"
+              >
+                View
+              </a>
+              <a
+                href={cert.file}
+                download
+                className="rounded-full bg-primary px-4 py-2 text-xs font-semibold text-primary-foreground transition hover:opacity-90"
+              >
+                Download
+              </a>
+            </div>
           </div>
         ))}
       </div>
