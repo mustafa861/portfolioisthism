@@ -303,33 +303,27 @@ function Certificates() {
     <section id="certificates" className="relative mx-auto max-w-7xl px-6 py-32 scroll-mt-20">
       <p className="text-sm font-semibold tracking-[0.3em] text-muted-foreground section-animate">CERTIFICATES</p>
       <h2 className="mt-3 text-5xl font-extrabold tracking-tight sm:text-6xl section-animate">Certifications</h2>
-      <div className="mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-2">
         {certificates.map((cert) => (
           <div
             key={cert.title}
-            className="card-violet group relative p-7 transition hover:-translate-y-1 hover:shadow-[0_30px_60px_-20px_oklch(0.72_0.2_135/0.6)] section-animate"
+            className="card-violet group relative p-6 transition hover:-translate-y-1 hover:shadow-[0_30px_60px_-20px_oklch(0.72_0.2_135/0.6)] section-animate"
           >
-            <div className="mb-6 inline-flex h-14 w-14 items-center justify-center rounded-xl bg-primary/15 text-2xl text-primary">
-              📜
+            <h3 className="text-lg font-semibold mb-4">{cert.title}</h3>
+            <div className="relative w-full bg-background/50 rounded-lg overflow-hidden border border-border/60">
+              <embed
+                src={cert.file}
+                type="application/pdf"
+                className="w-full h-[500px]"
+              />
             </div>
-            <h3 className="text-lg font-semibold">{cert.title}</h3>
-            <p className="mt-2 text-xs uppercase tracking-widest text-primary/80">{cert.issuer}</p>
-            <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{cert.description}</p>
-            <div className="mt-6 flex gap-3">
-              <a
-                href={cert.file}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="rounded-full bg-primary/10 border border-primary/30 px-4 py-2 text-xs font-semibold text-primary transition hover:bg-primary/20"
-              >
-                View
-              </a>
+            <div className="mt-6 flex justify-center">
               <a
                 href={cert.file}
                 download
-                className="rounded-full bg-primary px-4 py-2 text-xs font-semibold text-primary-foreground transition hover:opacity-90"
+                className="rounded-full bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground transition hover:opacity-90 glow-ring"
               >
-                Download
+                Download Certificate
               </a>
             </div>
           </div>
