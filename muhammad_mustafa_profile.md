@@ -71,7 +71,6 @@ His overarching goal is to build AI solutions that solve meaningful, real-world 
 
 ### HPGS — Happy Palace Group of Schools
 - Currently studying in **Grade 9**
-- Balancing formal schooling with intensive self-driven learning in AI and technology
 
 ---
 
