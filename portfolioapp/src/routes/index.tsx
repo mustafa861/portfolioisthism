@@ -310,7 +310,6 @@ function Certificates() {
             key={cert.title}
             className="card-violet group relative p-6 transition hover:-translate-y-1 hover:shadow-[0_30px_60px_-20px_oklch(0.72_0.2_135/0.6)] section-animate"
           >
-            <h3 className="text-lg font-semibold mb-4">{cert.title}</h3>
             <div className="relative w-full bg-background/50 rounded-lg overflow-hidden border border-border/60">
               <img
                 src={cert.image}
