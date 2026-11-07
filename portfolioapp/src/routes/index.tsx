@@ -189,6 +189,13 @@ function Hero() {
               >
                 About me
               </a>
+              <a
+                href="/Muhammad_Mustafa_CV.pdf"
+                download
+                className="rounded-full border border-primary/60 bg-primary/10 px-6 py-3 text-sm font-semibold text-primary hover:bg-primary/20 transition"
+              >
+                Download CV
+              </a>
             </div>
           </div>
         </div>
