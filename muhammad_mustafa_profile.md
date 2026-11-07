@@ -15,7 +15,7 @@
 
 ---
 
-## Professional Summary
+## Summary
 
 Muhammad Mustafa is an ambitious and driven AI developer based in Karachi, Pakistan. He is currently pursuing his education at **PIAIC** (Presidential Initiative for Artificial Intelligence & Computing) and **HPGS** (Happy Palace Group of Schools), where he is laying a strong academic and technical foundation for a career in artificial intelligence.
 
